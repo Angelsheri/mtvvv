@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clockwork Sections</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  body {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 10px; */
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.section {
+  background: white;
+  color: black;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  
+  /* Ensure equal height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Background colors for each section */
+.section:nth-child(1) { background: darkred; }
+.section:nth-child(2) { background: purple; }
+.section:nth-child(3) { background: darkorange; }
+.section:nth-child(4) { background: navy; }
+
+/* Ensure all videos are the same height */
+.video {
+  width: 100%;
+  flex-grow: 1; /* Makes the video stretch evenly */
+  min-height: 250px;
+  max-height: 100px;
+  border-radius: 5px;
+  object-fit: cover; /* Ensures the video scales properly */
+}
+
+/* Styling for text and buttons */
+.button {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.text-box {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: justify;
+  max-width: 90%;
+}
+
+.text1 {
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+}
+
+.button {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+}
+
+.text2 {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: rgb(5, 61, 61);
+}
+
+.text3 {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 10px;;
+  color: rgb(2, 0, 0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="grid-container" id="grid-container">
+    <div class="section" id="container2" style="background-color: #f5b580;">
+      <h2 class="text1">Clockwork New England</h2>
+      <iframe class="video" width="660" height="315" src="https://player.vimeo.com/video/191007033" frameborder="0"
+        allowfullscreen></iframe>
+      <a href="#" class="button">Click Here for More Videos</a>
+      <div class="text-box text2">Clockwork was INCREDIBLE!!...</div>
+      <div class="text-box text3"></div>
+    </div>
+    <div class="section" id="container3" style="background-color: #f89890;">
+      <h2 class="text1">Clockwork East Coast</h2>
+      <iframe class="video" width="660" height="315" src="https://player.vimeo.com/video/843997791" frameborder="0"
+        allowfullscreen></iframe>
+      <a href="#" class="button">Click Here for More Videos</a>
+      <div class="text-box text2">We had the East Coast band...</div>
+      <div class="text-box text3"></div>
+    </div>
+    <div class="section" id="container4" style="background-color: #d47cfb;">
+      <h2 class="text1">Clockwork Boston</h2>
+      <iframe class="video" width="660" height="315" src="https://player.vimeo.com/video/187117190" frameborder="0"
+        allowfullscreen></iframe>
+      <a href="#" class="button">Click Here for More Videos</a>
+      <div class="text-box text2">We hired Clockwork Boston for our NYE wedding...</div>
+      <div class="text-box text3"></div>
+    </div>
+    <div class="section" id="container1" style="background-color: #7a7afb;">
+      <h2 class="text1">Clockwork Northeast</h2>
+      <iframe class="video" width="660" height="315" src="https://player.vimeo.com/video/1031219754" frameborder="0"
+        allowfullscreen></iframe>
+      <a href="#" class="button">Click Here for More Videos</a>
+      <div class="text-box text2">Nick & Hayley Fragola Wedding...</div>
+      <div class="text-box text3"></div>
+    </div>
+  </div>
+
+
+  <script>
+    const containerData = [
+      {
+        text1: "Clockwork New England",
+        image: "https://player.vimeo.com/video/191007033",
+        text2: "Clockwork was INCREDIBLE!! We had the East Coast band play for our February 22nd wedding at the BPL and they were the star of the show. Our guests were raving about them the entire night. Greg, the lead singer was engaging and got every single person on their feet. Everything from the vocals, to the keyboard and the sax solo was perfection! The mix of music was a fantastic balance between modern hits and the beloved classics. I wouldn’t recommend you use anyone else for your big day!!",
+        text3: " Kristen Curran, 11/16/2024 Wedding at Harvard Club of Boston"
+        
+      },
+      {
+        text1: "Clockwork Northeast",
+        image: "https://player.vimeo.com/video/1031219754",
+        text2: "Nick & Hayley Fragola Wedding - 02/15/25 - We were beyond thrilled with Clockwork New England for our big day! From start to finish, their performance was exceptional. The band had everyone on their feet dancing all night long, and they perfectly captured the energy and vibe we wanted for our celebration. The variety of songs they played kept everyone entertained, and their ability to read the room and adjust the mood accordingly was truly impressive. Highly recommend this band to anyone looking to make their wedding day unforgettable!",
+        text3: " Lily Burchell, 2/22/2025 Wedding at Boston Public Library"
+      },
+      {
+        text1: "Clockwork East Coast",
+        image: "https://player.vimeo.com/video/843997791",
+        text2: "`Clockwork was INCREDIBLE!! We had the East Coast band play for our February 22nd wedding at the BPL and they were the star of the show. Our guests were raving about them the entire night. Greg, the lead singer was engaging and got every single person on their feet. Everything from the vocals, to the keyboard and the sax solo was perfection! I wouldn’t recommend you use anyone else for your big day!!`",
+      text3: "Nick Fragola, 2/15/2025 Wedding at The Tower"
+      },
+      {
+        text1: "Clockwork Boston",
+        image: "https://player.vimeo.com/video/187117190",
+        text2: "We hired Clockwork Boston for our NYE wedding on 12/31/24 and it was the best decision we made!! Ron was great to work with from day one, very communicative and made the process smooth and easy. They absolutely crushed it and kept all of our guests on the dance floor throughout the night! Could not recommend them enough!",
+      text3: " Denise Reitman, 12/31/2024 Wedding at Mountain Top Inn and Resort"
+      }
+    ];
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    window.addEventListener("load", function () {
+      const shuffledData = shuffleArray([...containerData]);
+
+      document.querySelector("#container1 .text1").textContent = shuffledData[0].text1;
+      document.querySelector("#container1 .video").src = shuffledData[0].image;
+      document.querySelector("#container1 .text2").textContent = shuffledData[0].text2;
+      document.querySelector("#container1 .text3").textContent = shuffledData[0].text3;
+
+      document.querySelector("#container2 .text1").textContent = shuffledData[1].text1;
+      document.querySelector("#container2 .video").src = shuffledData[1].image;
+      document.querySelector("#container2 .text2").textContent = shuffledData[1].text2;
+      document.querySelector("#container2 .text3").textContent = shuffledData[1].text3;
+
+      document.querySelector("#container3 .text1").textContent = shuffledData[2].text1;
+      document.querySelector("#container3 .video").src = shuffledData[2].image;
+      document.querySelector("#container3 .text2").textContent = shuffledData[2].text2;
+      document.querySelector("#container3 .text3").textContent = shuffledData[2].text3;
+
+      document.querySelector("#container4 .text1").textContent = shuffledData[3].text1;
+      document.querySelector("#container4 .video").src = shuffledData[3].image;
+      document.querySelector("#container4 .text2").textContent = shuffledData[3].text2;
+      document.querySelector("#container4 .text3").textContent = shuffledData[3].text3;
+    });
+  </script>
+
+</body>
+
+</html>
